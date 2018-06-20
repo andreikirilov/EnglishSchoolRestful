@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Добавить задание ученика</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<img alt="logonotfound" src="images/logo.png" />
+		<style>p {font-family: consolas;}</style>
+		<h2>Добавить задание ученика</h2>
+		<form action="#" th:action="@{/insclass}" th:object="${newClass}" method="post">
+			<p>Имя ученика:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{name}" />
+			</p>
+			<p>Дата занятия:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{date}" />
+			</p>
+			<p>Тема занятия:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{topic}" />
+			</p>
+			<p>Домашняя работа:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{homework}" />
+			</p>
+			<p>Итоговый результат:&nbsp;<input type="text" th:field="*{mark}" />
+			</p>
+			<p>
+				<input type="submit" value="Добавить" />
+				<input type="reset" value="Сбросить" />
+			</p>
+		</form>
+		<p>
+			<a href="/">Вернуться на главную</a>
+		</p>
+	</body>
+</html>

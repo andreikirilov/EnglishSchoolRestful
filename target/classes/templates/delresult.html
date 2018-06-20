@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Задание удалено</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<img alt="logonotfound" src="images/logo.png" />
+		<style>p {font-family: consolas;}</style>
+		<h2>Задание удалено</h2>
+		<p th:text="'ID:&nbsp;' + ${classes.ID}" />
+		<a href="/delclass">Удалить следующее задание</a>
+	</p>
+	<p>
+		<a href="/selclass">Смотреть все записи</a>
+	</p>
+	<p>
+		<a href="/">Вернуться на главную</a>
+	</p>
+</body>
+</html>

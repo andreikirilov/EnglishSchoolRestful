@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Удалить задание по ID</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<img alt="logonotfound" src="images/logo.png" />
+		<style>p {font-family: consolas;}</style>
+		<h2>Удалить задание по ID</h2>
+		<form action="#" th:action="@{/delclass}" th:object="${newClass}" method="post">
+			<p>ID:&nbsp;<input type="text" th:field="*{ID}" />
+			</p>
+			<p>
+				<input type="submit" value="Удалить" />
+				<input type="reset" value="Сбросить" />
+			</p>
+		</form>
+		<p>
+			<a href="/selclass">Смотреть все записи</a>
+		</p>
+		<p>
+			<a href="/">Вернуться на главную</a>
+		</p>
+	</body>
+</html>

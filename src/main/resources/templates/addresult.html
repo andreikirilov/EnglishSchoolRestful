@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Ученик добавлен</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<img alt="logonotfound" src="images/logo.png" />
+		<style>p {font-family: consolas;}</style>
+		<h2>Ученик добавлен</h2>
+		<p th:text="'Имя ученика:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + ${student.name}" />
+		<p th:text="'Пароль ученика:&nbsp;&nbsp;' + ${student.pass}" />
+		<p th:text="'Уровень ученика:&nbsp;' + ${student.level}" />
+		<p>
+			<a href="/addstudent">Добавить следующего ученика</a>
+		</p>
+		<p>
+			<a href="/">Вернуться на главную</a>
+		</p>
+	</body>
+</html>

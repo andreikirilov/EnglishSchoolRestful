@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Обновить задание по ID</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<img alt="logonotfound" src="images/logo.png" />
+		<style>p {font-family: consolas;}</style>
+		<h2>Обновить задание по ID</h2>
+		<form action="#" th:action="@{/updclass}" th:object="${newClass}" method="post">
+			<p>ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{ID}" />
+			</p>
+			<h3>Новые данные</h3>
+			<p>Имя ученика:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{name}" />
+			</p>
+			<p>Дата занятия:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{date}" />
+			</p>
+			<p>Тема занятия:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{topic}" />
+			</p>
+			<p>Домашняя работа:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{homework}" />
+			</p>
+			<p>Итоговый результат:&nbsp;<input type="text" th:field="*{mark}" />
+			</p>
+			<p>
+				<input type="submit" value="Обновить" />
+				<input type="reset" value="Сбросить" />
+			</p>
+		</form>
+		<p>
+			<a href="/selclass">Смотреть все записи</a>
+		</p>
+		<p>
+			<a href="/">Вернуться на главную</a>
+		</p>
+	</body>
+</html>

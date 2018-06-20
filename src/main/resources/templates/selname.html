@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Смотреть записи ученика</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<img alt="logonotfound" src="images/logo.png" />
+		<style>p {font-family: consolas;}</style>
+		<h2>Смотреть записи ученика</h2>
+		<form action="/selclass" method="get">
+			<div class="input-wrap">
+				<p>Имя ученика:&nbsp;<input type="text" name="name" class="userName"  />
+				</p>
+				<input type="submit" value="Смотреть" class="userName" />
+				<input type="reset" value="Сбросить" />
+			</div>
+		</form>
+		<p>
+			<a href="/">Вернуться на главную</a>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Задание добавлено</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<img alt="logonotfound" src="images/logo.png" />
+		<style>p {font-family: consolas;}</style>
+		<h2>Задание добавлено</h2>
+		<p th:text="'Имя ученика:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + ${classes.name}" />
+		<p th:text="'Дата занятия:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + ${classes.date}" />
+		<p th:text="'Тема занятия:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + ${classes.topic}" />
+		<p th:text="'Домашняя работа:&nbsp;&nbsp;&nbsp;&nbsp;' + ${classes.homework}" />
+		<p th:text="'Итоговый результат:&nbsp;' + ${classes.mark}" />
+		<p>
+			<a href="/insclass">Добавить следующее задание</a>
+		</p>
+		<p>
+			<a href="/selclass">Смотреть все записи</a>
+		</p>
+		<p>
+			<a href="/">Вернуться на главную</a>
+		</p>
+	</body>
+</html>
